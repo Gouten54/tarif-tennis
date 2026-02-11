@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Tarifs Club de Tennis</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: radial-gradient(circle at 50% 50%, #0f0c29, #302b63, #24243e);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .container {
+    text-align: center;
+    padding: 30px;
+    border: 2px solid #00ffff;
+    border-radius: 20px;
+    box-shadow: 0 0 40px #00ffff, 0 0 80px #ff00ff;
+  }
+  h1 {
+    font-size: 3em;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff;
+    margin-bottom: 40px;
+  }
+  table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px #00ffff;
+  }
+  th, td {
+    padding: 15px;
+    border: 1px solid #00ffff;
+    text-align: center;
+  }
+  th {
+    background: linear-gradient(90deg, #ff00ff, #00ffff);
+    text-shadow: 0 0 5px #000;
+  }
+  td {
+    background: rgba(0, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+  td:hover {
+    background: rgba(255, 0, 255, 0.3);
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  @media(max-width: 800px){
+    table { width: 100%; }
+    h1 { font-size: 2em; }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Tarifs Club de Tennis 🎾</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Catégorie</th>
+          <th>Âge</th>
+          <th>Prix (€)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Junior</td>
+          <td>-18 ans</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>Adulte</td>
+          <td>18 à 59 ans</td>
+          <td>150</td>
+        </tr>
+        <tr>
+          <td>Senior</td>
+          <td>60 ans et +</td>
+          <td>120</td>
+        </tr>
+        <tr>
+          <td>Famille</td>
+          <td>Forfait 2 adultes + enfants</td>
+          <td>350</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
